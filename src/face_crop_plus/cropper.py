@@ -605,7 +605,12 @@ class Cropper():
                 face = cv2.cvtColor(face, cv2.COLOR_RGB2BGR)
 
             # Make image path based on file format and save
+            
+
             file_path = os.path.join(output_dir, name + ext)
+            print("add bgr here")
+
+            
             cv2.imwrite(file_path, face)
     
     def save_groups(
